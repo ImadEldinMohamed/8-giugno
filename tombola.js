@@ -16,11 +16,11 @@ tabella();
 const button = document.getElementById("button");
 
 button.addEventListener("click", function () {
-  let y = document.querySelectorall(".stile-lista");
   let x = Math.floor((Math.random() * 90) + 1);
-  y.forEach((span) => {
-    if (Number(span.innertext) === x) {
-      span.style.color = "red";
+  let y = document.querySelectorAll(".stile-lista");
+  y.forEach(y => {
+    if (Number(y.innerText) === x) {
+       y.classList.add('funziona')
     }
   });
 });
